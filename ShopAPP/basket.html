@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./CSS/basket.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Корзина</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="basket-header-container header-container container flex">
+            <h2 class="basket-title">Shopping bar</h2>
+            <button class="button-reset shop-button header-button">
+                <a class="basket-link-home" href="./index.html">На главную
+            </a>
+            </button>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="basket" id="basketID">
+
+        <div class="basket-container-item">
+            
+        </div>
+
+        
+        <div class="basket-container flex">
+            <button class="remove-all btn-basket">Отчистить</button>
+        <div class="price-all">
+            <div class="count-all">Количество товаров: <span class="span-count">
+        </span>
+        </div>
+            <div class="price-all-container">Общая стоимость: <span class="span-price">
+        </span>
+        </div></div>
+            <button class="buy-all btn-basket">Оплатить</button>
+        </div>    
+        </section>
+        
+        <div class="modal-wrapper">
+            <div class="modal-container">
+                <div class="btn-close-container">
+                    <i class="uil uil-times-circle"></i>
+                </div>
+                <div class="name-modal">
+                    Корзина
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-basket-ul">
+                    </ul>
+                </div>
+                <button onclick="" class="add-to-cart add-modal">Купить</button>
+            </div>
+        </div>
+
+        <div class="modal-wrapper-form"></div>
+    </main>
+
+    <script src="./basket.js"></script>
+</body>
+</html>

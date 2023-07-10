@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>SHOP</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container container flex">
+          <a class="header-logo" href="#">
+            <div class="logo-container">
+              <img class="logo-image" src="./img/istockphoto-1345681613-612x612.jpg" alt="Онлайн магазин">
+            </div>
+          </a>
+          <a href="tel:+74953225448" class="header-phone">
+            +7 (495) 322 54&nbsp;48</a>
+          <a href="#" class="header-entr">Личный кабинет</a>
+        </div>
+            <div class="nav-container container flex">
+                
+                <nav class="header-nav">
+                    <ul class="list-reset nav-list flex">
+
+            <li class="nav-list-item">
+                <a href="#about" class="header-link">О&nbsp;нас</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#products" class="header-link">Товары</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#creators" class="header-link">Производители</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#placement" class="header-link">Размещение</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#blog" class="header-link">Блог</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#contacts" class="header-link">Контакты</a>
+            </li>
+                    </ul>
+                </nav>
+
+            <button class="button-reset shop-button header-button">На главную</button>
+            <button class="button-reset buy-botton header-button">
+                <a href="./basket.html">Корзина
+            </a>
+        </button>
+        </div>
+        <section class="category">
+            <div class="category-container container flex">
+                <button class="btn-category-activ btn-category button-reset">Все категории</button>
+                <button class="btn-category button-reset">Моноблоки</button>
+                <button class="btn-category button-reset">Ноутбуки</button>
+                <button class="btn-category button-reset">Смартфоны</button>
+                <button class="btn-category button-reset">Наушники</button>
+                <div class="header-search-container">
+                    <i class="uil uil-search"></i>
+                    <input class="header-search-input" type="text" placeholder="Найти...">
+                </div>
+                <div class="sort-header">
+                    <select class="sort-select" name="" id="">
+                        <option value="name,asc">По умолчанию</option>
+                        <option value="price,desc">Цена по убыванию</option>
+                        <option value="price,asc">Цена по возрастанию</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+        <main class="main">
+            <section class="products" id="products-id">
+                <div class="container product-block flex">
+                    <div class="product-card">
+                        <div class="product-image">
+                        <img class="img-product" src="" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                        <h3 class="product-name">Название товара</h3>
+                        <span class="product-price">Цена: 99,99 руб.</span>
+                        <span class="product-availability">Наличие: В наличии</span>
+                        <button onclick="" class="add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+            </div>
+            </section>
+        </main>
+    <div class="product-card modal-wrapper">
+        <div class="modal-container">
+            <div class="btn-close-container">
+                <i class="uil uil-times-circle"></i>
+            </div>
+            <div class="name-modal">
+                Ноутбук
+            </div>
+            <div class="modal-body">
+                <div class="modal-descr">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo iusto commodi dolorum veniam sint magnam numquam aspernatur dolorem nulla debitis, exercitationem perspiciatis facere sapiente. Non est obcaecati itaque consequuntur doloremque.</div>
+                <img class="modal-img" src="https://img.mvideo.ru/Big/30063640bb.jpg" alt="Картинка">
+            </div>
+            <button onclick="" class="add-to-cart add-modal">Добавить в корзину</button>
+        </div>
+    </div>
+    <script src="./api.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
